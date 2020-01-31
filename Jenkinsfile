@@ -10,7 +10,7 @@ pipeline {
         checkout scm  
         dir('cloud-automation') {
           git(
-            url: 'https://github.com/uc-cdis/cloud-automation.git',
+            url: 'https://github.com/supritsh/compose_services.git',
             branch: 'master'
           )
         }

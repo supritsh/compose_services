@@ -1,6 +1,11 @@
 #!groovy
 
 pipeline {
+
+  environment {
+    registry = "gitcsssh/compose_services"
+    registryCredential = ‘dockerhub’
+  }
   agent any
 
 

@@ -22,8 +22,8 @@ pipeline {
     }
     stage('docker pull') {
       steps {
-//        sh('sudo docker-compose pull')
-	sh('sudo docker-compose /home/suprit/.jenkins/workspace/compose_services/cloud-automation/docker-compose.yml')
+        sh('sudo docker-compose pull')
+//	sh('sudo docker-compose /home/suprit/.jenkins/workspace/compose_services/cloud-automation/docker-compose.yml')
       }
     }
     stage('AcquireLock') {

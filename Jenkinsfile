@@ -1,8 +1,8 @@
 #!groovy
 
 pipeline {
-  agent any
-
+//  agent any
+  agent { compose-services true }
 
   stages {
     stage('FetchCode') {

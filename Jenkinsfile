@@ -1,8 +1,7 @@
 #!groovy
 
 pipeline {
-//  agent any
-  agent { dockerfile true }
+  agent any
 
   stages {
     stage('FetchCode') {

@@ -2,7 +2,7 @@
 
 pipeline {
 //  agent any
-  agent { compose-services true }
+  agent { dockerfile true }
 
   stages {
     stage('FetchCode') {
